@@ -1,0 +1,25 @@
+@use "./variables" as *;
+body {
+  font-family: $font-stack;
+  overflow-x: hidden;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2 {
+  margin: 0px;
+}
+img {
+  max-width: 100%;
+}
+.wrapper {
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 auto;
+}
