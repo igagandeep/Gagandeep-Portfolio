@@ -1,0 +1,101 @@
+@use "./variables" as *;
+@use "global";
+
+.about-me {
+  margin-top: 50px;
+}
+.about-me .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.profile-photo {
+  display: flex;
+  align-self: center;
+  flex: 1 0 45%;
+  padding: 20px;
+  img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 55%;
+  padding: 20px;
+
+  h2 {
+    color: $primary;
+  }
+  h3 {
+    span {
+      color: $primary;
+    }
+  }
+  .e-signature {
+    font-family: $logo-font-family;
+  }
+  button {
+    background-color: $primary;
+    color: #fff;
+    border-radius: none;
+    border-color: $primary;
+    padding: 8px;
+    margin-top: 20px;
+    width: 25%;
+  }
+}
+
+@media (max-width: 992px) {
+  .profile-photo {
+    flex-direction: column;
+    align-self: center;
+    flex: 1 0 100%;
+    img {
+      width: 50%;
+    }
+  }
+  .profile-info {
+    align-items: center;
+    text-align: center;
+    flex: 1 0 100%;
+    p {
+      text-align: justify;
+      width: 70%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .profile-photo {
+    img {
+      width: 60%;
+    }
+  }
+  .profile-info {
+    p {
+      width: 100%;
+    }
+    button {
+      width: 40%;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-photo {
+    img {
+      width: 90%;
+    }
+  }
+  .profile-info {
+    h2 {
+      width: 100%;
+    }
+    button {
+      width: 40%;
+      font-size: 12px;
+    }
+  }
+}
