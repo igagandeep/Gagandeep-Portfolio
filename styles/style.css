@@ -623,6 +623,90 @@ nav .wrapper {
   width: 25%;
 }
 
+.portfolio-container {
+  margin-top: 50px;
+}
+
+.portfolio-container > .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.portfolio-container > .wrapper .portfolio-heading {
+  text-align: center;
+  font-size: 48px;
+}
+
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 0;
+}
+
+.portfolio-demo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.portfolio-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  padding: 20px;
+}
+.portfolio-info .portfolio-title {
+  font-size: 32px;
+}
+.portfolio-info .tech-stack {
+  background-color: #f6f6f6;
+  padding: 10px;
+}
+
+.portfolio-even {
+  margin-left: 30px;
+}
+
+.portfolio-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.portfolio-links button {
+  color: #fff;
+  background: #e74c3c;
+  padding: 8px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 30%;
+}
+.portfolio-links a {
+  color: #e74c3c;
+  font-size: 20px;
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
 @media (max-width: 992px) {
   .profile-photo {
     -webkit-box-orient: vertical;
@@ -650,6 +734,36 @@ nav .wrapper {
   .profile-info p {
     text-align: justify;
     width: 70%;
+  }
+  .portfolio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .portfolio-demo {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .portfolio-info {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .portfolio-info p {
+    width: 80%;
+  }
+  .portfolio-info .portfolio-links button {
+    width: 100px;
   }
 }
 @media (max-width: 768px) {
