@@ -707,6 +707,63 @@ nav .wrapper {
   text-decoration: underline;
 }
 
+.skills-container {
+  margin-top: 50px;
+  background-color: #f6f6f6;
+}
+
+.skills-container .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 70px 30px;
+}
+.skills-container .wrapper h2 {
+  font-size: 48px;
+  text-align: center;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 70px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.skills .skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.skills .skill img {
+  width: 100px;
+  height: 100px;
+}
+.skills .skill img:hover {
+  color: #e74c3c;
+}
+.skills .skill span {
+  margin-top: 10px;
+}
+.skills .skill:hover {
+  color: #e74c3c;
+}
+
 @media (max-width: 992px) {
   .profile-photo {
     -webkit-box-orient: vertical;
