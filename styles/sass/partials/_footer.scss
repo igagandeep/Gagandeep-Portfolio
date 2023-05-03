@@ -1,0 +1,8 @@
+@use "./variables" as *;
+footer {
+  background-color: #f6f6f6;
+  padding: 2px;
+  h4 {
+    text-align: center;
+  }
+}

@@ -999,3 +999,10 @@ form button {
     margin-top: 0;
   }
 }
+footer {
+  background-color: #f6f6f6;
+  padding: 2px;
+}
+footer h4 {
+  text-align: center;
+}
