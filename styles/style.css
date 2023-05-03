@@ -764,16 +764,19 @@ nav .wrapper {
   color: #e74c3c;
 }
 
-.contact {
-  border: 1px solid black;
+.contact-container {
   margin-top: 50px;
 }
 
-.contact .wrapper {
+.contact-container .wrapper .contact-heading {
+  font-size: 48px;
+  text-align: center;
+}
+
+.contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid red;
 }
 
 .contact-info {
@@ -791,7 +794,7 @@ nav .wrapper {
   font-size: 18px;
 }
 .contact-info h2 {
-  font-size: 64px;
+  font-size: 48px;
   font-family: "Great Vibes", cursive;
 }
 .contact-info h2 span {
@@ -813,6 +816,58 @@ nav .wrapper {
   width: 30px;
   height: 30px;
   margin-right: 10px;
+}
+
+.contact-form {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  margin-top: 20px;
+}
+form button {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  margin-left: 10px;
+}
+
+.form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+}
+.form-group input,
+.form-group textarea {
+  border-radius: 5px;
+  border: solid 1.5px #d3d3d3;
+  padding: 5px;
+  margin-top: 5px;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
 }
 
 @media (max-width: 992px) {
@@ -885,6 +940,27 @@ nav .wrapper {
     width: 40%;
     font-size: 16px;
   }
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-info {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-info .bio {
+    text-align: center;
+    width: 90%;
+  }
+  .contact-form {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 @media (max-width: 480px) {
   .profile-photo img {
@@ -896,5 +972,30 @@ nav .wrapper {
   .profile-info button {
     width: 40%;
     font-size: 12px;
+  }
+  .contact-container {
+    margin-top: 30px;
+  }
+  .contact-info {
+    margin-top: 10px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    font-size: 16px;
+    padding: 25px;
+  }
+  .contact-info h2 {
+    font-size: 36px;
+  }
+  .contact-info .bio {
+    width: 100%;
+    text-align: justify;
+  }
+  .contact-info img {
+    width: 25px;
+    height: 25px;
+  }
+  form {
+    margin-top: 0;
   }
 }
