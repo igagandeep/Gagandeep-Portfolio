@@ -497,7 +497,7 @@ nav .wrapper {
   width: 60%;
   text-align: center;
 }
-.header-content button {
+.header-content .download-cv {
   background-color: #e74c3c;
   padding: 10px 15px;
   color: #fff;
