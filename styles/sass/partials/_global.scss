@@ -1,4 +1,7 @@
 @use "./variables" as *;
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: $font-stack;
   overflow-x: hidden;
