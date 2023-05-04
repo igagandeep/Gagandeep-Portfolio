@@ -262,6 +262,8 @@ html {
 
 html {
   scroll-behavior: smooth;
+  -webkit-transition: 5s;
+  transition: 5s;
 }
 
 body {
@@ -417,25 +419,6 @@ nav .wrapper {
           transform: scale(1.3);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-.nav-bottom .nav-items .tool-tip-text {
-  visibility: hidden;
-  width: 120px;
-  text-transform: capitalize;
-  font-family: "Great Vibes", cursive;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -60px;
-}
-.nav-bottom .nav-items:hover .tool-tip-text {
-  visibility: visible;
 }
 .nav-bottom img {
   width: 30px;
@@ -617,12 +600,13 @@ nav .wrapper {
 .profile-info .e-signature {
   font-family: "Great Vibes", cursive;
 }
-.profile-info button {
+.profile-info .portfolio-link {
   background-color: #e74c3c;
   color: #fff;
   border-radius: none;
   border-color: #e74c3c;
-  padding: 8px;
+  padding: 8px 4px;
+  text-align: center;
   margin-top: 20px;
   width: 25%;
 }
@@ -695,13 +679,14 @@ nav .wrapper {
       -ms-flex-align: center;
           align-items: center;
 }
-.portfolio-links button {
+.portfolio-links .live-link {
   color: #fff;
   background: #e74c3c;
   padding: 8px;
   border: none;
   border-radius: 50px;
-  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
   width: 30%;
 }
 .portfolio-links a {

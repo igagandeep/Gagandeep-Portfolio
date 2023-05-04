@@ -36,12 +36,13 @@
   .e-signature {
     font-family: $logo-font-family;
   }
-  button {
+  .portfolio-link {
     background-color: $primary;
     color: #fff;
     border-radius: none;
     border-color: $primary;
-    padding: 8px;
+    padding: 8px 4px;
+    text-align: center;
     margin-top: 20px;
     width: 25%;
   }
@@ -92,13 +93,14 @@
 .portfolio-links {
   display: flex;
   align-items: center;
-  button {
+  .live-link {
     color: #fff;
     background: $primary;
     padding: 8px;
     border: none;
     border-radius: 50px;
-    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
     width: 30%;
   }
   a {
