@@ -23,9 +23,9 @@ nav .wrapper {
   justify-content: space-between;
 }
 .logo {
-  flex: 3 1 auto;
+  flex: 2 1 auto;
   h1 {
-    font-family: $logo-font-family;
+    font-family: $secondary-font-stack;
     font-size: 36px;
     span {
       color: $primary;
@@ -36,7 +36,7 @@ nav .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex: 5 1 auto;
+  flex: 1 1 auto;
   text-transform: uppercase;
   .nav-items {
     &:hover {
@@ -52,18 +52,7 @@ nav .wrapper {
     }
   }
 }
-.social-icons {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex: 1 1 auto;
-  margin-top: 5px;
 
-  li {
-    font-size: 32px;
-    margin-left: 5px;
-  }
-}
 .nav-bottom {
   display: flex;
   background-color: #fff;
@@ -72,7 +61,7 @@ nav .wrapper {
   justify-content: space-evenly;
   position: fixed;
   bottom: 0;
-  z-index: 9999;
+  z-index: 999999;
   width: 100%;
   display: none;
   .nav-items {
@@ -84,6 +73,7 @@ nav .wrapper {
     }
   }
   img {
+    color: #fff;
     width: 30px;
     height: 30px;
   }
@@ -105,7 +95,6 @@ nav .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  opacity: 0.9;
   margin-top: 50px;
   line-height: 1.5;
   .logo {
