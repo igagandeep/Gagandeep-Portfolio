@@ -784,10 +784,16 @@ nav .wrapper {
   font-size: 32px;
   margin-left: 5px;
 }
+.contact-container .wrapper .ln-link {
+  color: #e74c3c;
+  text-decoration: underline;
+}
 .contact-container .wrapper .email {
   background-color: #e74c3c;
   padding: 10px 30px;
   color: #fff;
+  border-color: #e74c3c;
+  cursor: pointer;
 }
 
 @media (max-width: 992px) {
@@ -899,7 +905,7 @@ nav .wrapper {
     margin-top: 30px;
   }
   .contact-container .wrapper .contact-heading {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 footer {

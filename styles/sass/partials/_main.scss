@@ -194,10 +194,16 @@
       margin-left: 5px;
     }
   }
+  .ln-link {
+    color: $primary;
+    text-decoration: underline;
+  }
   .email {
     background-color: $primary;
     padding: 10px 30px;
     color: #fff;
+    border-color: $primary;
+    cursor: pointer;
   }
 }
 
@@ -308,7 +314,7 @@
   }
   .contact-container .wrapper {
     .contact-heading {
-      font-size: 32px;
+      font-size: 28px;
     }
   }
 }
