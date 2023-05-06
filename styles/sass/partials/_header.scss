@@ -53,7 +53,8 @@ nav .wrapper {
 
 .nav-bottom {
   display: flex;
-  background-color: #fff;
+  background-color: #ecf0f1;
+  box-shadow: 4px 16px 16px 10px rgba(0, 0, 0, 0.5);
   margin-top: 100px;
   padding: 10px 0px;
   justify-content: space-evenly;
@@ -71,6 +72,7 @@ nav .wrapper {
     }
   }
   img {
+    text-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.19);
     color: #fff;
     width: 30px;
     height: 30px;
