@@ -11,26 +11,31 @@
 .profile-photo {
   display: flex;
   align-self: center;
-  flex: 1 0 45%;
+  flex: 1 0 50%;
   padding: 20px;
+
+  animation-name: hvr-hang-sink, hvr-hang;
+  animation-duration: 0.3s, 1.5s;
+  animation-delay: 0s, 0.3s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal, alternate;
   img {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
   }
 }
 .profile-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1 0 55%;
+  flex: 1 0 50%;
   padding: 30px;
   letter-spacing: 0.5px;
 
   h2 {
-    color: $primary;
-  }
-  h3 {
+    font-size: 24px;
     span {
       color: $primary;
     }
@@ -48,6 +53,12 @@
     text-align: center;
     margin-top: 5px;
     width: 25%;
+
+    animation-name: hvr-buzz;
+    animation-duration: 0.15s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 15;
   }
 }
 
@@ -73,16 +84,17 @@
 
 .portfolio-demo {
   display: flex;
-  flex-basis: 60%;
+  flex-basis: 57%;
 }
 
 .portfolio-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-basis: 40%;
+  flex-basis: 43%;
   margin-top: 20px;
   padding: 20px;
+  line-height: 1.5;
   .portfolio-title {
     font-size: 32px;
   }
