@@ -4,16 +4,319 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon-16x16.png"
+      type="image/x-icon"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Source+Sans+Pro:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Gagandeep</title>
   </head>
   <body>
-    <h1>Hellow World</h1>
+    <header>
+      <nav>
+        <div class="wrapper">
+          <div class="logo">
+            <h1>iGagan<span>Deep</span></h1>
+          </div>
+          <ul class="nav">
+            <li class="nav-items"><a href="#home">home</a></li>
+            <li class="nav-items"><a href="#about">about</a></li>
+            <li class="nav-items"><a href="#skills">skills</a></li>
+            <li class="nav-items"><a href="#portfolio">portfolio</a></li>
+            <li class="nav-items"><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <ul class="nav-bottom">
+        <li class="nav-items">
+          <a href="#home"
+            ><img src="./assets/home.svg" alt="this is picture of home icon"
+          /></a>
+        </li>
+        <li class="nav-items">
+          <a href="#about"
+            ><img src="./assets/about.svg" alt="this is picture of about icon"
+          /></a>
+        </li>
+        <li class="nav-items">
+          <a href="#skills"
+            ><img src="./assets/skills.svg" alt="this is picture of skill icon"
+          /></a>
+        </li>
+        <li class="nav-items">
+          <a href="#portfolio"
+            ><img
+              src="./assets/portfolio.svg"
+              alt="this is picture of portfolio icon"
+          /></a>
+        </li>
+
+        <li class="nav-items">
+          <a href="#contact"
+            ><img
+              src="./assets/contact.svg"
+              alt="this is picture of contact icon"
+          /></a>
+        </li>
+      </ul>
+
+      <div class="header-banner" id="home">
+        <div class="fog-wrapper">
+          <div class="fog-image fog-image-1"></div>
+          <div class="forg-image fog-image-2"></div>
+        </div>
+        <div class="wrapper">
+          <div class="header-content">
+            <div class="logo">
+              <h1>iGagan<span>Deep</span></h1>
+            </div>
+            <img src="./assets/profile-pic.jpeg" alt="this is profile pic" />
+            <h2>Front-End Web Developer</h2>
+            <p>
+              Experienced front-end web developer with a passion for creating
+              engaging user interfaces and optimizing website performance.
+            </p>
+            <a class="download-cv" href="./assets/Gagandeep_Resume.pdf" download
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="about-me" id="about">
+        <div class="wrapper">
+          <div class="profile-photo hang">
+            <img src="./assets/dp3.png" alt="this is profile picture" />
+          </div>
+
+          <div class="profile-info">
+            <h2>Hi ! I'm <span>Gagandeep</span></h2>
+            <p>
+              From the moment I produced “Hello World” in the console of my
+              first application, I knew I was hooked into the world of web
+              development. But Web Development has never been “just a job” for
+              me, it’s offered an engaging challenege to continually learn and
+              improve my skills in creating high-quality softwares. What started
+              with simple “Hello World” has become a full fledged passion that
+              only gets more exciting as the years go by...
+            </p>
+            <a href="#portfolio" class="portfolio-link buzz">View Portfolio</a>
+          </div>
+        </div>
+      </section>
+      <!-- **************************SKILLS************************* -->
+      <section class="skills-container" id="skills">
+        <div class="wrapper">
+          <h2>Skills</h2>
+          <ul class="skills">
+            <li class="skill hvr-wobble-skew">
+              <img src="./assets/html.svg" alt="this is picture of html icon" />
+              <span>html</span>
+            </li>
+            <li class="skill hvr-wobble-skew">
+              <img src="./assets/css.svg" alt="this is picture of css icon" />
+              <span>css</span>
+            </li>
+            <li class="skill hvr-wobble-skew">
+              <img src="./assets/sass.svg" alt="this is picture of sass icon" />
+              <span>sass</span>
+            </li>
+            <li class="skill hvr-wobble-skew">
+              <img
+                src="./assets/js.svg"
+                alt="this is picture of javascript icon"
+              />
+              <span>javascript</span>
+            </li>
+            <li class="skill hvr-wobble-skew">
+              <img
+                src="./assets/react.svg"
+                alt="this is picture of react icon"
+              />
+              <span>react</span>
+            </li>
+            <li class="skill hvr-wobble-skew">
+              <img
+                src="./assets/github.svg"
+                alt="this is picture of github icon"
+              />
+              <span>github</span>
+            </li>
+            <li class="skill hvr-wobble-skew">
+              <img
+                src="./assets/fb.svg"
+                alt="this is picture of firebase icon"
+              />
+              <span>firebase</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- *********************** PORTFOLIO **************************-->
+      <section class="portfolio-container" id="portfolio">
+        <div class="wrapper">
+          <h2 class="portfolio-heading">Portfolio</h2>
+          <div class="portfolio">
+            <div class="portfolio-info">
+              <h2 class="portfolio-title">Pronia-Store</h2>
+              <p>
+                Pronia-Store is an ecommerce project selling a variety of
+                plants, offering a user-friendly interface allowing customers to
+                add products to their cart system with ease, and change the
+                quantity of selected items.
+              </p>
+              <p class="tech-stack">
+                Tech Stack: HTML5, CSS3, Sass, Javascript, Firebase
+              </p>
+              <div class="portfolio-links">
+                <a
+                  href="https://bit.ly/42qVMoT"
+                  target="_blank"
+                  class="live-link"
+                  >Live Link</a
+                ><a href="https://bit.ly/3HE0Qht" target="_blank">View Code</a>
+              </div>
+            </div>
+            <div class="portfolio-demo hvr-hang">
+              <img
+                src="./assets/pronia-store.png"
+                alt="this is picture of ecommerce demo app"
+              />
+            </div>
+          </div>
+          <div class="portfolio">
+            <div class="portfolio-demo hvr-hang">
+              <img
+                src="./assets/panda.png"
+                alt="this is picture of ecommerce demo app"
+              />
+            </div>
+            <div class="portfolio-info portfolio-even">
+              <h2 class="portfolio-title">Panda Sanctuary</h2>
+              <p>
+                The Panda Sanctuary website is a visually stunning platform that
+                showcases the lovable pandas in all their splendor. Through a
+                collection of high-quality images and engaging content, the
+                website provides a glimpse into the life of these gentle
+                creatures.
+              </p>
+              <p class="tech-stack">Tech Stack: HTML5, CSS3</p>
+              <div class="portfolio-links">
+                <a
+                  class="live-link"
+                  target="_blank"
+                  href="https://bit.ly/3VCV1qA"
+                  >Live Link</a
+                >
+                <a href="https://bit.ly/3NCWV8E" target="_blank">View Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio">
+            <div class="portfolio-info">
+              <h2 class="portfolio-title">Covid-19 Tracker</h2>
+              <p>
+                Based on the e-commerce application, This application will
+                allows you to buy products online. User can resgiter, add
+                products to the shopping cart and purshase order
+              </p>
+              <p class="tech-stack">
+                Tech Stack: React, Axios, Redux, Stripe, Firebase
+              </p>
+              <div class="portfolio-links">
+                <a
+                  class="live-link"
+                  href="https://bit.ly/3p8QmAv"
+                  target="_blank"
+                  >Live Link</a
+                >
+                <a href="https://bit.ly/42n3QqB" target="_blank">View Code</a>
+              </div>
+            </div>
+            <div class="portfolio-demo hvr-hang">
+              <img
+                src="./assets/covid19.png"
+                alt="this is picture of ecommerce demo app"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ************* CONTACT ME ******************* -->
+      <section class="contact-container" id="contact">
+        <div class="wrapper">
+          <h2 class="contact-heading">Contact me</h2>
+          <ul class="social-icons">
+            <li>
+              <a href="https://bit.ly/410W7NE" target="_blank"
+                ><img
+                  src="./assets/tw.svg"
+                  alt="this is picture of twitter icon"
+                  width="30"
+                  height="30"
+              /></a>
+            </li>
+            <li>
+              <a href="https://bit.ly/3LMnANR" target="_blank"
+                ><img
+                  src="./assets/git.svg"
+                  alt="this is picture of github icon"
+                  width="30"
+                  height="30"
+              /></a>
+            </li>
+            <li>
+              <a href="https://bit.ly/40V2dPH" target="_blank"
+                ><img
+                  src="./assets/ln.svg"
+                  alt="this is picture of linkedin icon"
+                  width="30"
+                  height="30"
+              /></a>
+            </li>
+          </ul>
+          <p>
+            Please feel free to reach out to me using
+            <a class="ln-link" href="https://bit.ly/40V2dPH" target="_blank"
+              >LinkedIn</a
+            >
+            or can also email me by clicking on the button below.
+          </p>
+          <button
+            type="button"
+            id="email-btn"
+            data-email="igagandeep95@gmail.com"
+            class="email"
+          >
+            Copy Email
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrapper">
+        <h4>igagandeep &copy; 2023 All rights reserved</h4>
+        <a href="https://freeicons.io/" target="_blank">Icons by Free Icons</a>
+      </div>
+    </footer>
   </body>
+  <script src="./scripts/script.js"></script>
 </html>
