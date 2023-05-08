@@ -103,7 +103,7 @@ nav .wrapper {
     background-repeat: repeat-x;
     background-size: cover;
     background-position: center;
-    animation: marquee 20s linear infinite;
+    animation: marquee 50s linear infinite;
   }
 
   .fog-image-2 {
@@ -111,7 +111,7 @@ nav .wrapper {
     background-repeat: repeat-x;
     background-size: cover;
     background-position: center;
-    animation: marquee 20s linear infinite;
+    animation: marquee 50s linear infinite;
   }
 }
 @keyframes marquee {

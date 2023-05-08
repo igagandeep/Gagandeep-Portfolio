@@ -435,16 +435,16 @@ nav .wrapper {
   background-repeat: repeat-x;
   background-size: cover;
   background-position: center;
-  -webkit-animation: marquee 20s linear infinite;
-          animation: marquee 20s linear infinite;
+  -webkit-animation: marquee 50s linear infinite;
+          animation: marquee 50s linear infinite;
 }
 .fog-wrapper .fog-image-2 {
   background: url("../assets/fog-2.png");
   background-repeat: repeat-x;
   background-size: cover;
   background-position: center;
-  -webkit-animation: marquee 20s linear infinite;
-          animation: marquee 20s linear infinite;
+  -webkit-animation: marquee 50s linear infinite;
+          animation: marquee 50s linear infinite;
 }
 
 @-webkit-keyframes marquee {
