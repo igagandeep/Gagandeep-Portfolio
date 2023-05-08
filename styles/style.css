@@ -532,6 +532,9 @@ nav .wrapper {
     display: -ms-flexbox;
     display: flex;
   }
+  .fog-wrapper {
+    display: none;
+  }
   .header-content {
     padding-bottom: 50px;
     margin-top: 0px;
