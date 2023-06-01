@@ -169,6 +169,7 @@ nav .wrapper {
     }
     .nav-bottom {
         display: flex;
+        z-index: 99999;
     }
     .fog-wrapper {
         display: none;

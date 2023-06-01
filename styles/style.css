@@ -530,6 +530,7 @@ nav .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    z-index: 99999;
   }
   .fog-wrapper {
     display: none;
@@ -1034,5 +1035,10 @@ footer .wrapper a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media (max-width: 340px) {
+  footer {
+    padding: 10px;
   }
 }
