@@ -315,7 +315,7 @@ nav {
   padding: 8px 0px;
   background-color: #fff;
   position: fixed;
-  z-index: 99999;
+  z-index: 999999;
   width: 100%;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
@@ -387,7 +387,6 @@ nav .wrapper {
           justify-content: space-evenly;
   position: fixed;
   bottom: 0;
-  z-index: 999999;
   width: 100%;
   display: none;
 }
@@ -518,9 +517,9 @@ nav .wrapper {
   padding: 10px 15px;
   color: #fff;
   border: none;
+  z-index: 999;
   border-color: #e74c3c;
   cursor: pointer;
-  z-index: 999999999999999;
 }
 
 @media (max-width: 768px) {
